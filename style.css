@@ -16,6 +16,7 @@
 @import "screen/setting-screen.css";
 @import "screen/chat-screen.css";
 @import "screen/phonescreen.css";
+
 .media {
   display: none;
 }
