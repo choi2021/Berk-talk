@@ -1,0 +1,28 @@
+.chat-screen {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+  align-items: center;
+}
+
+.chat-screen__column {
+  width: 33%;
+}
+
+.chat-screen__column:nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chat-screen__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat-screen__column:last-child i {
+  font-size: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}

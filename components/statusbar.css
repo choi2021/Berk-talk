@@ -1,0 +1,43 @@
+.statusbar {
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+
+  top: 0;
+  width: 100%;
+  padding: 10px 10px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statusbar_column {
+  width: 33%;
+}
+
+.statusbar_column:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.statusbar_column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusbar_column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.statusbar_column:first-child i {
+  margin-left: 8px;
+}
+
+.statusbar_column:last-child i {
+  margin-left: 8px;
+}

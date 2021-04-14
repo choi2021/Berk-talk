@@ -1,0 +1,129 @@
+.index-body {
+  background-color: #1a2b53;
+}
+
+.welcome-statusbar {
+  color: azure;
+}
+
+.Welcome-header {
+  margin-top: 90px;
+  text-align: center;
+  color: azure;
+}
+
+.Welcome-header__header {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.Welcome-header span {
+  opacity: 0.5;
+}
+
+.Welcome-form {
+  margin: 0px 15px;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Welcome-form a {
+  color: azure;
+}
+
+.Welcome-main__user {
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-bottom: var(--gray) 1px solid;
+  margin-bottom: 30px;
+}
+
+.Welcome-main__user:focus {
+  outline: none;
+  border-color: #080a07;
+}
+
+.Welcome-main__btn {
+  color: azure;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 20px;
+  background-color: #080a07;
+  border: none;
+  cursor: pointer;
+}
+
+.Welcome-form {
+}
+
+.Welcome-form span {
+  font-size: 14px;
+}
+
+.Welcome-main__btn[type="submit"] {
+  margin-bottom: 20px;
+}
+
+@keyframes splashScreenImage {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes splashScreen {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*
+.splash-screen {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  animation: splashScreen forwards 5s ease-in-out;
+  animation-delay: 2s;
+}
+.splash-image {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  animation: splashScreenImage forwards 5s ease-in-out;
+}
+
+.splash-image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+*/

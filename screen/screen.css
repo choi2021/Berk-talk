@@ -1,0 +1,63 @@
+.screen {
+  margin-top: 10px;
+  position: fixed;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.screen-column:first-child {
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.screen-column-icons {
+  display: flex;
+}
+
+.screen-column-icons i {
+  padding: 20px;
+  font-size: 18px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-column-icons a :hover {
+  animation: rotateCog 2s linear infinite;
+}
+
+@keyframes iconGoup {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  00% {
+    transform: none;
+  }
+}
+
+.fa-search:hover {
+  animation: iconGoup 1s ease-in-out infinite;
+}
+
+.fa-music:hover {
+  animation: iconGoup 1s ease-in-out infinite;
+}
+.fa-comment-dots:hover {
+  animation: iconGoup 1s ease-in-out infinite;
+}
