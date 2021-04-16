@@ -1,10 +1,9 @@
 .screen {
-  margin-top: 10px;
   position: fixed;
+  top: 35px;
   z-index: 3;
-  margin-top: 30px;
-  padding-top: 10px;
-  background-color: white;
+  background-color: var(--darkgray);
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
