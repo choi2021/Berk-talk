@@ -8,7 +8,7 @@
     <title>Friends</title>
 </head>
 <body>
-    <div class="statusbar fixed-top">
+    <div class="statusbar">
         <div class="statusbar_column">
             <span> No service</span>
             <i class="fas fa-wifi"></i>
@@ -22,9 +22,9 @@
             <i class="fas fa-bolt"></i>
         </div>
     </div>
-        <div class="screen fixed-top">
+        <div class="screen">
             <div class="screen-column">
-                <span>Family</span>
+                <span>Friends</span>
             </div>
             <div class="screen-column">
                 <ul class="screen-column-icons">
@@ -36,18 +36,19 @@
         </div>
 
         <main class="friends-main" >
-            <div class="friends-main__title">
-                <span> <i class="fas fa-dragon"></i><i class="fas fa-info-circle"></i> Welcome to Berk Island </span>
-            </div>
-
-            <div class="friends-main__me">
-                <div class="friends-main__me__column">
-                    <img class="friends-main__me-column__img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\Hiccup-Haddock-how-to-train-your-dragon-36854390-500-613.png" height=100px width=100px>
-                    <span class="friends-main__me-column__name"> Hiccup</span>
-                </div>    
-                <div class="friends-main__me__column">
-                    <img class="friends-main__me-column__img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\toothfriend.jpg" height="100px" width="100px">
+            <a class="friends-display-link">
+                <i class="fas fa-dragon"></i><i class="fas fa-info-circle"></i> Friends's Names Display <i class="fas fa-chevron-right fa-xs"></i> 
+            </a>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="file:///C:/Users/LENOVO/Desktop/Coding/challege/challenge1/Training%20Dragons/Hiccup-Haddock-how-to-train-your-dragon-36854390-500-613.png" class="user-component__avatar--xl" alt="">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Hiccup</h4>
+                        <!--<h6 class="user-component__subtitle"></h6>
+                        -->           
+                    </div>
                 </div>
+                <div class="user-component__column"></div>
             </div>
             
             <div class="friends-main__channel">
@@ -55,60 +56,105 @@
                     <span>Channel</span>
                     <i class="fas fa-chevron-up"></i>
                 </div>
-                <div class="friends-main__channel__channels">
-                    <div class="friends-main__channel__channels-column">
-                        <img class="friends-main__channel-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Kakao_logo.jpg" height="80px" width="80px" >
-                        <span class="friends-main__channel-name">Channel</span>
+                <div class="friends-main__channel__content">
+                    <div class="user-component__column">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Kakao_logo.jpg" class="user-component__avatar--sm" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Channel</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
                     </div>
-                    <div class="friends-main__channel__channels-column">
-                        <span>2</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-                <div class="friends-main__channel__channels">
-                    <div class="friends-main__channel__channels-row">
-                        <div class="friends-main__channel__channels__row__img">
-                            <img class="friends-main__channel-img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\Dreamworks-Animation.jpg" height="80px" width="80px" height="80px" width="80px" >
-                        </div>    
-                        <span class="friends-main__channel-name">Dreamworks</span>
+                    <div class="user-component__column friends-main__channel__channels">
+                        <div>
+                            <span>2</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="friends-main__channel__channels">
-                    <div class="friends-main__channel__channels-row">
-                        <div class="friends-main__channel__channels__row__img">
-                            <img class="friends-main__channel-img" src="https://nomadcoders.co/m.png" height="80px" width="80px" >
-                        </div>    
-                        <span class="friends-main__channel-name">Nomadcoders</span>
+                <div class="friends-main__channel__content">
+                    <div class="user-component__column">
+                        <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\Dreamworks-Animation.jpg" class="user-component__avatar--sm" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Dreamworks</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
                     </div>
+                    <div class="user-component__column"></div>
                 </div>
-                
+                <div class="friends-main__channel__content">
+                    <div class="user-component__column">
+                        <img src="https://nomadcoders.co/m.png" class="user-component__avatar--sm" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Nomadcoders</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
             </div>
-            <div class="friends-main-friedns">
-                <ul class="friends-main__lists">
-                    <li class="friends-main__list">
-                        <img class="friends-main__list__img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\astrid.jpg" height=100px width=100px>
-                        <span class="friends-main__list__name"> Astrid</span>
-                    </li>
-                    <li class="friends-main__list">
-                        <img class="friends-main__list__img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\default_fishlegs-6d8dec62-fb64-49fa-a83f-579cce12ab38.jpg" height=100px width=100px>
-                        <span class="friends-main__list__name"> Fishlegs</span>
-                    </li>
-                    <li class="friends-main__list">
-                        <img class="friends-main__list__img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\9eefa23d60e3466fb740f578b7b3b3e8.jpg" height=100px width=100px>
-                        <span class="friends-main__list__name"> Snotlout</span>
-                    </li>
-
-                    <li class="friends-main__list">
-                        <img class="friends-main__list__img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\temp_259983_182087.jpg" height=100px width=100px>
-                        <span class="friends-main__list__name"> Ruffnot</span>
-                    </li>
-
-                    <li class="friends-main__list">
-                        <img class="friends-main__list__img" src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\t.jpg" height=100px width=100px>
-                        <span class="friends-main__list__name"> Tuffnot</span>
-                    </li>
-                </ul>
-            </div>
+            <ul class="friends-main-lists">
+                <div class="friends-main-lists-title">
+                    <span>Friends</span>
+                </div>
+                <li class="friends-main__list">
+                    <div class="user-component__column">
+                        <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\astrid.jpg" class="user-component__avatar--md" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Astrids</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </li>     
+                <li class="friends-main__list">
+                    <div class="user-component__column">
+                        <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\default_fishlegs-6d8dec62-fb64-49fa-a83f-579cce12ab38.jpg" class="user-component__avatar--md" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Fishlegs</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </li>     
+                <li class="friends-main__list">
+                    <div class="user-component__column">
+                        <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\9eefa23d60e3466fb740f578b7b3b3e8.jpg" class="user-component__avatar--md" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Snotlout</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </li>     
+                <li class="friends-main__list">
+                    <div class="user-component__column">
+                        <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\temp_259983_182087.jpg" class="user-component__avatar--md" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Ruffnot</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </li>     
+                <li class="friends-main__list">
+                    <div class="user-component__column">
+                        <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\t.jpg" class="user-component__avatar--md" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Tuffnot</h4>
+                            <!--<h6 class="user-component__subtitle"></h6>
+                            -->           
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </li>
+            </ul>
         </main>
 
         <nav class="navbar">

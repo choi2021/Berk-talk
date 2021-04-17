@@ -5,8 +5,10 @@
   position: fixed;
   z-index: 3;
   width: 100%;
-  top: 40px;
-
+  top: 36px;
+  background-color: var(--blue);
+  padding: 10px;
+  color: var(--white);
   box-sizing: border-box;
 }
 

@@ -1,17 +1,18 @@
 @import "reset.css";
-
 @import "variables.css";
+/*components*/
 @import "components/welcome.css";
 @import "components/navbar.css";
 @import "components/statusbar.css";
-@import "components/friends.css";
 @import "components/chats.css";
 @import "components/badge.css";
 @import "components/find.css";
 @import "components/more.css";
 @import "components/settings.css";
 @import "components/chat.css";
-
+@import "components/user-component.css";
+/*screen*/
+@import "screen/friends.css";
 @import "screen/screen.css";
 @import "screen/setting-screen.css";
 @import "screen/chat-screen.css";
@@ -23,20 +24,23 @@
 
 @media screen and (min-width: 600px) {
   .media {
-    background-color: #1a2b53;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: azure;
+    color: var(--white);
     font-size: 30px;
     position: absolute;
     top: 0;
     z-index: 99;
-    height: 100vh;
+    height: 140vh;
     width: 100vw;
   }
   .media span {
-    padding: 10px;
+    position: absolute;
+    z-index: 99;
+    top: 200px;
+    padding: 30px;
     border: 2px solid var(--white);
   }
 
@@ -45,7 +49,7 @@
   }
 
   .media-friends {
-    background-color: #1a2b53;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
     display: flex;
     color: azure;
     font-size: 30px;
@@ -62,7 +66,41 @@
     z-index: 99;
     top: 200px;
     padding: 30px;
-    border: 2px solid var(--gray);
+    border: 2px solid var(--white);
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 

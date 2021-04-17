@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--darkgray);
+  background-color: var(--blue);
   padding: 20px 40px;
 }
 
@@ -62,4 +62,19 @@
   bottom: 12px;
   left: 18px;
   animation: coinFlip 3s infinite ease-in-out;
+}
+
+.navbar-list:nth-child(4) {
+  position: relative;
+}
+
+.navbar-btn__dot {
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
 }
