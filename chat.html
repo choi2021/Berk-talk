@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>More</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>chat w/ Astrid</title>
 </head>
 <body id="chat-body">
-    <div class="statusbar chat-statusbar">
+    <div class="statusbar">
         <div class="statusbar_column">
             <span> No service</span>
             <i class="fas fa-wifi"></i>
@@ -17,57 +17,59 @@
             <span>18:43</span>
         </div>
         <div class="statusbar_column">
-            <span>11%</span>
+            <span>50%</span>
             <i class="fas fa-battery-half"></i>
             <i class="fas fa-bolt"></i>
         </div>
     </div>
-
-    <div class="chat-screen">
-        <div class="chat-screen__column">
-            <a href="chats.html"><i class="fas fa-chevron-left"></i></a>
+    <header class="alt-screen">
+        <div class="alt-screen__column">
+            <a href="more.html">
+                <i class="fas fa-chevron-left"></i>
+            </a>
         </div>
-        <div class="chat-screen__column">
-            <span>Astrid</span>
+        <div class="alt-screen__column">
+            <h1>Astrid</h1>
         </div>
-        <div class="chat-screen__column">
-            <i class="fas fa-search "></i>
-            <i class="fas fa-bars"></i>
+        <div class="alt-screen__column">
+            <span> <i class="fas fa-search"></i></span>
+            <span><i class="fas fa-bars"></i></span>
         </div>
-    </div>
+    </header>
 
     <main class="chat-main">
-        <div class="chat-main__row">
-            <span>Wednesday, April 14, 2021</span>
+        <div class="chat__timestamp">
+            Wednesday, April 14, 2021
         </div>
-        <div class="chat-main__row">
-            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\astrid.jpg" alt="" width="80px" height="80px">
-            <div class="chat-main__row__column">
-                <span class="chat-main__row__column__name">Astrid</span>
-                <span class="chat-main__row__column__text">Have U seen Stormfly?</span>
-            </div>
-            <div class="chat-main__row__column">
-                <span class="chat-main__row__column__time">18:20</span>
-            </div>
-        </div>
-        <div class="chat-main__row">
-            <div class="chat-main__row__column">
-                <div></div>
-                <span class="chat-main__row__column-me-time">18:27</span>
-            </div>
-            <div class="chat-main__row__column">
-                <span class="chat-main__row__column-me"> She was with Toothless</span>
+        <div class="message-row">
+            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\astrid.jpg" >
+            <div class="message-row__content">
+                <span class="message__author">Astrid</span>
+                <div class="message__info">
+                    <span class="message__bubble">Have U seen Stormfly?</span>
+                    <span class="message__time">18:20</span>
+                </div>
             </div>
         </div>
-        <div class="chat-main__row">
-            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\astrid.jpg" alt="" width="80px" height="80px">
-            <div class="chat-main__row__column">
-                <span class="chat-main__row__column__name">Astrid</span>
-                <span class="chat-main__row__column__text">Oh I see. </span>
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">She was with Toothless</span>
+                    <span class="message__time">18:27</span>
+                </div>
             </div>
-            <div class="chat-main__row__column">
-                <div></div>
-                <span class="chat-main__row__column__time">18:30</span>
+        </div>
+        <div class="message-row message-row--own">
+            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\b449631c067e63f1efc82bf599d2bb91.gif">
+        </div>
+        <div class="message-row">
+            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\astrid.jpg">
+            <div class="message-row__content">
+                <span class="message__author">Astrid</span>
+                <div class="message__info">
+                    <span class="message__bubble">Oh I see! </span>
+                    <span class="message__time">18:30</span>
+                </div>
             </div>
         </div>
     </main>
@@ -75,23 +77,29 @@
     
     
 
-    <nav class="chat-nav">
-        <div class="chat-nav-column">
+    <nav class="reply">
+        <div class="reply__column">
             <i class="far fa-plus-square"></i>
         </div>
-        <div class="chat-nav-column">
-            <input class="chat-nav-column__input" type="text" placeholder=" Write a message">
-            <i class="far fa-smile-wink"></i>
-            <i class="fas fa-hashtag"></i>
+        <div class="reply__column">
+            <input type="text" placeholder=" Write a message">
+            <span class="reply__column-btn">
+                <i class="far fa-smile-wink"></i>
+            </span>
+            <span class="reply__column-btn">
+                <i class="fas fa-hashtag"></i>
+            </span>
         </div>
-        
     </nav>
 
 
-    <div class="media">
-        <span> Your screen is Way too big</span>
-    </div>
-
+    <div class="no-mobile">
+        <div>
+            <span>😅Oops😅</span>
+            <span>Your screen is too big to use our website</span>  
+            <span> Please make sure it is portrait.</span>
+        </div>
+    </div> 
     <script src="https://kit.fontawesome.com/a6a726722e.js" crossorigin="anonymous"></script>
 </body>
 </html>

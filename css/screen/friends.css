@@ -1,0 +1,264 @@
+.friends-main {
+  position: absolute;
+  top: 113px;
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+  width: 100%;
+}
+
+.friends-display-link {
+  z-index: 1;
+  text-align: center;
+  font-size: 20px;
+  color: var(--black);
+  opacity: 0.5;
+  background-color: var(--blue);
+  padding: 17px 0px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  top: 0px;
+}
+
+@keyframes dragonMove {
+  0% {
+    transform: none;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  35% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+.friends-display-link .fa-dragon {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  animation: dragonMove 10s ease-in-out infinite;
+}
+
+.friends-main__channel {
+  display: flex;
+  flex-direction: column;
+  padding: 5px var(--horizontal-space);
+  padding-bottom: 20px;
+  color: var(--black);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.friends-main__channel__title {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px var(--horizontal-space);
+}
+
+.friends-main__channel__channels {
+  opacity: 0.5;
+}
+
+.friends-main__channel__channels span {
+  margin-right: 5px;
+}
+
+.friends-main__channel__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.friends-main__channel__content:hover {
+  box-shadow: 0px 0px 10px;
+}
+
+.friends-main-lists {
+  padding: 15px var(--horizontal-space);
+}
+
+.friends-main-lists-title {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0px var(--horizontal-space);
+  margin-bottom: 10px;
+}
+
+.friends-main__list {
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: var(--black);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.friends-main__list:hover {
+  transform: scaleX(1.03) scaleY(1.1);
+  border: var(--blue) 2px solid;
+}
+
+.nomad {
+  background: var(--white);
+  border-radius: 30px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 0px 4px;
+}
+
+.nomad img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes splashFriends {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes imageShow {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes firstLayer {
+  from {
+    background-color: #79a8a9;
+  }
+  to {
+    background: #283b42;
+  }
+}
+
+@keyframes otherLayer {
+  0% {
+    background: #283b42;
+  }
+  50% {
+    background-color: #79a8a9;
+  }
+  100% {
+    background: #283b42;
+  }
+}
+
+.splash-friends {
+  position: absolute;
+  top: 0px;
+  z-index: 101;
+  background-color: #283b42;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: splashFriends 6s forwards ease-in-out;
+}
+
+.ring {
+  background-color: #283b42;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: otherLayer 1s linear forwards;
+}
+
+.first-layer {
+  width: 500px;
+  height: 500px;
+  animation: firstLayer 1s linear forwards;
+}
+
+.second-layer {
+  width: 400px;
+  height: 400px;
+  animation-delay: 1s;
+}
+
+.third-layer {
+  width: 300px;
+  height: 300px;
+  animation-delay: 2s;
+}
+
+.fourth-layer {
+  width: 200px;
+  height: 200px;
+  animation-delay: 3s;
+}
+
+.blue-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #283b42;
+  border-radius: 50%;
+}
+
+.blue-circle img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: imageShow 5s linear forwards;
+}
+
+.profile-music {
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #4ddb76;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.profile-message {
+  font-size: 12px;
+}

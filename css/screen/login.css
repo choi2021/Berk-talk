@@ -1,9 +1,29 @@
-.welcome-body {
-  background-color: var(--darkgray);
+
+@keyframes dragonFly {
+  from {
+    background-position: -20% -5%;
+  }
+  to {
+    background-position: 120% -5%;
+  }
 }
 
+
+.welcome-body{
+  background-color: var(--blue);
+  background-image: url("https://i.esdrop.com/d/a9CC2ljwWj.png");
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  animation: dragonFly 7s ease-in-out infinite;
+
+    cursor: url(cursor.cur) 5 5, pointer;
+
+}
+
+
 .Welcome-header {
-  margin-top: 90px;
+  margin-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +46,7 @@
 
 .Welcome-form {
   margin: 0px 15px;
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -48,7 +68,7 @@
 
 .Welcome-main__user:focus {
   outline: none;
-  border-color: #080a07;
+  border-color: var(--gray);
 }
 
 .Welcome-main__btn {
@@ -58,12 +78,9 @@
   font-size: 20px;
   border-radius: 7px;
   padding: 20px;
-  background-color: #080a07;
+  background-color:var(--black);
   border: none;
   cursor: pointer;
-}
-
-.Welcome-form {
 }
 
 .Welcome-form span {
@@ -74,17 +91,11 @@
   margin-bottom: 20px;
 }
 
-@keyframes splashScreenImage {
+@keyframes splashImage {
   0% {
     opacity: 0;
   }
-  25% {
-    opacity: 0;
-  }
   50% {
-    opacity: 0;
-  }
-  75% {
     opacity: 1;
   }
   100% {
@@ -106,25 +117,27 @@
   }
 }
 
-.splash-screen {
+.splash-log-in-background {
   position: absolute;
   top: 0;
+  z-index:99;
   height: 100vh;
   width: 100%;
-  animation: splashScreen forwards 5s ease-in-out;
-  animation-delay: 2s;
+  animation: splashScreen forwards 5s ease-in-out;*/
 }
-.splash-image {
+.splash-log-in-image {
+  z-index:99;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: absolute;
   top: 0;
-  animation: splashScreenImage forwards 5s ease-in-out;
+  animation: splashImage forwards 5s ease-in-out;
 }
 
-.splash-image img {
+.splash-log-in-image img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
+

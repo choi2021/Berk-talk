@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Finds</title>
 </head>
 <body>
@@ -36,79 +36,80 @@
     </div>
     <main class="find-main">
         <div class="find-main-icons" >
-            <div class="find-column">
-                <ul class="find-column__icons">
-                    <li class="find-column__icons__icon">
-                        <i class="fas fa-qrcode fa-2x"></i><span>QR Code</Code></span>
-                    </li>
-                    <li class="find-column__icons__icon">
-                        <i class="far fa-address-book fa-2x"></i><span>Add by <br>Contacts</span>
-                    </li>
-                    <li class="find-column__icons__icon">
-                        <i class="fas fa-fingerprint fa-2x"></i><span>Add by ID</span>
-                    </li>
-                    <li class="find-column__icons__icon">
-                        <i class="far fa-envelope fa-2x"></i><span>Invite</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="find-column">
-                <span>Recommended Friends</span>
-            </div>
-            <div class="find-column">
-                <div class="find-recommended-friend">
-                    <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\shrek.jpg" height=100px width=100px>
-                    <span> Shrek</span>
+            <div class="icon-row-icons">
+                <div class="icon-row__icon">
+                    <i class="fas fa-qrcode fa-2x"></i><span>QR Code</Code></span>
+                </div>
+                <div class="icon-row__icon">
+                    <i class="far fa-address-book fa-2x"></i><span>Add by <br>Contacts</span>
+                </div>
+                <div class="icon-row__icon">
+                    <i class="fas fa-fingerprint fa-2x"></i><span>Add by ID</span>
+                </div>
+                <div class="icon-row__icon">
+                    <i class="far fa-envelope fa-2x"></i><span>Invite</span>
                 </div>
             </div>
         </div>
+        <div class="find-recommended-friend">
+            <span class="find-recommended-friend__title">Recommended Friends</span>
+            <div class="user-component">
+                <div class="user-component__column ">
+                    <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\shrek.jpg" class="user-component__avatar--xl" alt="">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Shrek</h4>
+                    </div>
+                </div>
+                <div class="user-component__column"></div>
+            </div>
+        </div>
         
-        <article class="open-chat">
+        <div class="open-chat">
             <div class="open-chat__header">
                     <span>Open Chat</span>
-                    <span>Go to Openchat Home <i class="fas fa-chevron-right"></i></span>
+                    <span>Go to Open-chat Home <i class="fas fa-chevron-right"></i></span>
             </div>
-
             <div class="open-chat__post">
                 <div class="open-chat__post-row">
                     <div class="open-chat__post__column">
-                        <div class="open-chat__post__column-text">#How to Train Your Dragon: Homecoming</div>
-                        <span class="open-chat__post__column-text">#Toothless #Nightfury kids #old-Hiccup</span>
+                        <H4 class="open-chat__post__column-title">#How to Train Your Dragon: Homecoming</H4>
+                        <h6 class="open-chat__post__column-hashtags">#Toothless #Nightfury kids #Old-Hiccup</h6>
                         <div class="open-chat__post__column-text">
-                            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\hiccup profile.jpg">
-                            <span class="open-chat__column__post__img"> 802 members</span>
-                            <span class="open-chat__column__post__Active">Active</span>
+                            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\hookfangwithsnot.jpg">
+                            <span class="open-chat__post__column__members"> 802 members</span>
+                            <div class="divider"></div>
+                            <span class="open-chat__post__column__Active">Active</span>
                         </div>
                     </div>
-                    <div class="open-chat__column">
+                    <div class="open-chat__post__column">
                         <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\homecoming poster.jpg">
-                        <div class="open-chat__column__heart">
+                        <div class="open-chat___post__column__heart">
                             <i class="fas fa-heart"></i>
                             <span>456</span>
                         </div>
                     </div>
                 </div>
-                <div class="open-chat__post">
-                    <div class="open-chat__post-row">
-                        <div class="open-chat__post__column">
-                            <div class="open-chat__post__column-text">#Toothless fandom</div>
-                            <span class="open-chat__post__column-text">#The most adorable pet #nightfury </span>
-                            <div class="open-chat__post__column-text">
-                                <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\5bcb364f971441a65429a25d356b75c7.jpg">
-                                <span class="open-chat__column__post__img"> 1502 members</span>
-                                <span class="open-chat__column__post__Active">Active</span>
-                            </div>
-                        </div>
-                        <div class="open-chat__column">
-                            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\toothless.jpg">
-                            <div class="open-chat__column__heart">
-                                <i class="fas fa-heart"></i>
-                                <span>902</span>
-                            </div>
+                <div class="open-chat__post-row">
+                    <div class="open-chat__post__column">
+                        <h4 class="open-chat__post__column-title">#Toothless fandom</h4>
+                        <h6 class="open-chat__post__column-hashtags">#The most adorable pet #nightfury </h6>
+                        <div class="open-chat__post__column-text">
+                            <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\5bcb364f971441a65429a25d356b75c7.jpg">
+                            <span class="open-chat__post__column__img"> 1502 members</span>
+                            <div class="divider"></div>
+                            <span class="open-chat__post__column__Active">Active</span>
                         </div>
                     </div>
+                    <div class="open-chat__post__column">
+                        <img src="C:\Users\LENOVO\Desktop\Coding\challege\challenge1\Training Dragons\toothless.jpg">
+                        <div class="open-chat___post__column__heart">
+                            <i class="fas fa-heart"></i>
+                            <span>902</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </article>
+        </div>
     </main>
 
     <nav class="navbar">
@@ -130,13 +131,13 @@
         </ul>
     </nav>
 
-    <div class="media">
-        <span> Your screen is Way too big</span>
-    </div>
-
-    
-    
-
+    <div class="no-mobile">
+        <div>
+            <span>😅Oops😅</span>
+            <span>Your screen is too big to use our website</span>  
+            <span> Please make sure it is portrait.</span>
+        </div>
+    </div> 
     <script src="https://kit.fontawesome.com/a6a726722e.js" crossorigin="anonymous"></script>
 </body>
 </html>

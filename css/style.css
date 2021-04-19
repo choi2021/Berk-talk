@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,100&display=swap");
+@import "reset.css";
+@import "variables.css";
+/*components*/
+@import "components/navbar.css";
+@import "components/statusbar.css";
+@import "components/badge.css";
+@import "components/user-component.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+@import "components/screen-header.css";
+/*screen*/
+@import "screen/find.css";
+@import "screen/friends.css";
+@import "screen/chat-screen.css";
+@import "screen/chat.css";
+@import "screen/more.css";
+@import "screen/settings.css";
+@import "screen/chats.css";
+@import "screen/login.css";
+@import "screen/profile.css";
+
+body {
+  font-family: "Roboto Mono", monospace;
+}

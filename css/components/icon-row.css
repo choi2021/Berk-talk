@@ -1,0 +1,41 @@
+.icon-row-icons {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin: 0px 20px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: none;
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  transition: color 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-row__icon i {
+  margin-bottom: 15px;
+}
+
+.icon-row__icon:hover:not(.nav-btn) {
+  animation: bounce 0.5s ease-in-out forwards;
+  color: var(--black);
+}

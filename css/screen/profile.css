@@ -1,0 +1,125 @@
+.profile-hiccup-body,
+.profile-astrid-body,
+.profile-fishlegs-body,
+.profile-snotlout-body,
+.profile-ruffnot-body,
+.profile-tuffnot-body {
+  background-size: 100vw 700px;
+  background-repeat: no-repeat;
+  color: var(--white);
+}
+
+.profile-hiccup-body {
+  background-image: url(https://i.esdrop.com/d/5qUBvUrELb.png);
+}
+
+.profile-astrid-body {
+  background-image: url(https://i.esdrop.com/d/d6AlQKfjf6.png);
+}
+
+.profile-fishlegs-body {
+  background-image: url(https://i.esdrop.com/d/f0YTz2UySv.png);
+}
+
+.profile-snotlout-body {
+  background-image: url(https://i.esdrop.com/d/1LyHeWBwpX.png);
+}
+
+.profile-ruffnot-body,
+.profile-tuffnot-body {
+  background-image: url(https://i.esdrop.com/d/kEvVlspPAo.png);
+}
+
+.profile-header {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.profile-header__column > i {
+  font-size: 20px;
+}
+
+.profile-header__column {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-header__btns {
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.profile-header__btns > i {
+  font-size: 16px;
+}
+
+.profile-header__btns:hover {
+  animation: bounce 0.5s ease-in-out forwards;
+}
+
+.nav-profile {
+  position: fixed;
+  bottom: 0;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav-profile__lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-btn {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.nav-btn span {
+  font-size: 10px;
+}
+
+.profile-screen {
+  position: absolute;
+  height: 70%;
+  top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-screen__music {
+  display: flex;
+  align-items: center;
+}
+.profile-screen__music img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 20px;
+}
+
+.profile-screen__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-title {
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.profile-subtitle {
+  font-size: 12px;
+}
