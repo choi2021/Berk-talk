@@ -16,9 +16,8 @@
   background-repeat: no-repeat;
   background-size: 100px;
   animation: dragonFly 7s ease-in-out infinite;
-
-    cursor: url(cursor.cur) 5 5, pointer;
-
+  cursor: url(cursor.cur) 5 5, pointer;
+  overflow:hidden;
 }
 
 

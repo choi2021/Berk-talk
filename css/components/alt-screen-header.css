@@ -4,7 +4,7 @@
   align-items: center;
   position: fixed;
   z-index: 3;
-  width: 100%;
+  width: 100vw;
   top: 36px;
   background-color: var(--blue);
   padding: 10px;
