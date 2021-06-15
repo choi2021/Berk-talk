@@ -1,5 +1,9 @@
-#chat-body {
+.chat-body {
   background-color: var(--blue);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .chat-header__date {
@@ -16,7 +20,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   align-items: center;
 }
 
@@ -120,13 +123,13 @@
 }
 
 .reply {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   background-color: var(--white);
   display: flex;
   align-items: center;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   padding: 5px 15px;
   box-sizing: border-box;
   transition:all 0.3s ease-in-out;
