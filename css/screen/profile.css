@@ -4,7 +4,7 @@
 .profile-snotlout-body,
 .profile-ruffnot-body,
 .profile-tuffnot-body {
-  background-size: 100vw 700px;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
   color: var(--white);
 }
@@ -27,7 +27,7 @@
 
 .profile-ruffnot-body,
 .profile-tuffnot-body {
-  background-image: url(https://i.esdrop.com/d/kEvVlspPAo.png);
+  background-image: url(https://i.esdrop.com/d/kEvVlspPAo.png) ;
 }
 
 .profile-header {
@@ -113,11 +113,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding:24px;
 }
 
 .profile-title {
   font-size: 14px;
-  margin: 5px 0px;
+  margin: 16px 0px;
 }
 
 .profile-subtitle {

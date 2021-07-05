@@ -45,7 +45,7 @@
 }
 
 .user-component__title {
-  font-size: 20px;
+  font-size: var(--font-medium);
   font-weight: bold;
   opacity: var(--name-opacity);
   margin-bottom: 5px;
