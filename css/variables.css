@@ -1,12 +1,20 @@
 :root {
+  /* color */
   --white: #ffffff;
   --blue: #85b8cb;
   --darkblue: #1d6a96;
   --black: #283b42;
-  --horizontal-space: 10px;
-  --name-opacity: 0.8;
   --gray: #aacfd0;
   --darkgray: #79a8a9;
-  --shadow: 0px 0px 8px;
   --yellow: #ecd434;
+  /* font-size */
+  --font-large:28px;
+  --font-medium:20px;
+  --font-regular:16px;
+  --font-small:14px;
+  --font-tiny:8px;
+
+  --shadow: 0px 0px 8px;
+  --horizontal-space: 10px;
+  --name-opacity: 0.8;
 }

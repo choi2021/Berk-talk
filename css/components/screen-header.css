@@ -1,6 +1,6 @@
 .screen {
   position: fixed;
-  top: 35px;
+  top: 28px;
   z-index: 3;
   background-color: var(--blue);
   color: var(--white);
@@ -26,7 +26,7 @@
 }
 
 .screen-column:first-child span {
-  font-size: 32px;
+  font-size: var(--font-large);
   display: block;
 }
 
@@ -40,8 +40,8 @@
 }
 
 .screen-column-icons i {
-  padding: 20px;
-  font-size: 18px;
+  padding: 10px;
+  font-size: var(--font-regular);
 }
 
 @keyframes rotateCog {

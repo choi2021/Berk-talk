@@ -13,7 +13,6 @@
 /*screen*/
 @import "screen/find.css";
 @import "screen/friends.css";
-@import "screen/chat-screen.css";
 @import "screen/chat.css";
 @import "screen/more.css";
 @import "screen/settings.css";
@@ -24,52 +23,67 @@
 body {
   font-family: "Roboto Mono", monospace;
   overflow-x:hidden ;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width:499px)  {
-  .first-layer {
-    width: 400px;
-    height: 400px;
-    animation: firstLayer 1s linear forwards;
+@media screen and (max-width:450px) and (min-width:420px){
+  :root{
+    --font-large:24px;
+  --font-medium:16px;
+  --font-regular:12px;
+  --font-small:10px;
+  --font-tiny:6px;
   }
-  
-  .second-layer {
-    width: 320px;
-    height: 320px;
-    animation-delay: 1s;
+  .friends-main{
+    top:80px;
   }
-  
-  .third-layer {
-    width: 240px;
-    height: 240px;
-    animation-delay: 2s;
-  }
-  
-  .fourth-layer {
-    width: 160px;
-    height: 160px;
-    animation-delay: 3s;
-  }
-  
-  .blue-circle {
-    width: 80px;
-    height: 80px;
-    background-color: #283b42;
-    border-radius: 50%;
-  }
-  
-  .blue-circle img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    animation: imageShow 5s linear forwards;
+  .user-component__avatar--xl{
+    width: 85px;
+    height: 85px;
   }
 
-  .profile-music {
-    border-radius: 20px;
-    padding: 10px;
-    border: 2px solid #4ddb76;
-    font-size: 12px;
-    cursor: pointer;
+  .user-component__avatar--md{
+    width:70px;
+    height: 70px;
+  }
+
+  .user-component__avatar--sm{
+    width: 55px;
+    height: 55px;
+  }
+
+  .icon-row-icons{
+    padding:8px;
+  }
+}
+
+@media screen and (max-width:420px) {
+  :root{
+    --font-large:24px;
+  --font-medium:16px;
+  --font-regular:12px;
+  --font-small:10px;
+  --font-tiny:6px;
+  }
+  .friends-main{
+    top:80px;
+  }
+  .user-component__avatar--xl{
+    width: 75px;
+    height: 75px;
+  }
+
+  .user-component__avatar--md{
+    width:55px;
+    height: 55px;
+  }
+
+  .user-component__avatar--sm{
+    width: 45px;
+    height: 45px;
+  }
+
+  .profile-music{
+    padding:4px;
   }
 }

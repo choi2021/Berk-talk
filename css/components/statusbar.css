@@ -4,13 +4,14 @@
   color: var(--white);
   z-index: 3;
   top: 0;
-  width: 100vw;
+  width: 100%;
   padding: 10px 10px;
   box-sizing: border-box;
   font-weight: 200;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size:var(--font-small);
 }
 
 .statusbar_column {
@@ -33,14 +34,19 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left:24px;
 }
 
 .statusbar_column:first-child i {
   margin-left: 8px;
 }
 
+.statusbar_column:last-child span{
+  margin:0px 8px;
+}
+
 .statusbar_column:last-child i {
-  margin-left: 8px;
+  margin:0px 8px;
 }
 
 .chat-statusbar {
